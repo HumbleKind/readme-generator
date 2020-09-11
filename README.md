@@ -1,3 +1,19 @@
-# Readme Generator
 
-This is a command-line application that dynamically generates a professional README.md from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+    # README Generator
+
+    ## Description
+
+    ## Table of Contents
+
+    ## Installation
+
+    ## Usage
+
+    ## License
+
+    ## Contributing
+
+    ## Tests
+
+    ## Questions
+    
