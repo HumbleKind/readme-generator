@@ -57,6 +57,17 @@ function promptUser() {
             name: "usage"
         },
         {
+            type: "list",
+            message: "Please select a license from the following list:",
+            name: "license",
+            choices: [
+                "MIT",
+                "Apache__2.0",
+                "GNU__3.0",
+                "BSD__3"
+            ]
+        },
+        {
             type: "input",
             message: "Please include project contribution guidelines:",
             name: "contributing"
@@ -75,17 +86,6 @@ function promptUser() {
             type: "input",
             message: "Please enter your email address:",
             name: "email"
-        },
-        {
-            type: "list",
-            message: "Please select a license from the following list:",
-            name: "license",
-            choices: [
-                "MIT",
-                "Apache--2.0",
-                "GNU-3.0",
-                "BSD-3"
-            ]
         }
     ]);
 }
@@ -96,6 +96,7 @@ function generateMD(answers) {
 ![License Badge](https://img.shields.io/badge/lisence-${answers.license}-brightgreen)
 
 ## Description
+${answers.description}
 
 ## Table of Contents
 [Installation](#installation)
@@ -106,14 +107,18 @@ function generateMD(answers) {
 [Questions](#questions)
 
 ## Installation
+${answers.installation}
 
 ## Usage
+${answers.usage}
 
 ## License
 
 ## Contributing
+${answers.contributing}
 
 ## Tests
+${answers.tests}
 
 ## Questions
 `;
