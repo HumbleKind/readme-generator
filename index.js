@@ -40,10 +40,44 @@ function promptUser() {
             type: "input",
             message: "Please enter the title for your project (i.e. README Generator):",
             name: "title"
+        },
+        {
+            type: "input",
+            message: "Please provide a brief project description:",
+            name: "description"
+        },
+        {
+            type: "input",
+            message: "Please include project installation instructions:",
+            name: "installation"
+        },
+        {
+            type: "input",
+            message: "Please provide project usage information:",
+            name: "usage"
+        },
+        {
+            type: "input",
+            message: "Please include project contribution guidelines:",
+            name: "contributing"
+        },
+        {
+            type: "input",
+            message: "Please include project test instructions:",
+            name: "tests"
+        },
+        {
+            type: "input",
+            message: "Please enter your GitHub username:",
+            name: "github"
+        },
+        {
+            type: "input",
+            message: "Please enter your email address:",
+            name: "email"
         }
     ]);
 }
-
 
 function generateMD(answers) {
     return `
