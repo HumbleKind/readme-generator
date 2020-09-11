@@ -75,6 +75,17 @@ function promptUser() {
             type: "input",
             message: "Please enter your email address:",
             name: "email"
+        },
+        {
+            type: "list",
+            message: "Please select a license from the following list:",
+            name: "license",
+            choices: [
+                "MIT",
+                "Apache-2.0",
+                "GNU-3.0",
+                "BSD-3"
+            ]
         }
     ]);
 }
@@ -82,6 +93,7 @@ function promptUser() {
 function generateMD(answers) {
     return `
 # ${answers.title}
+![License Badge](https://img.shields.io/badge/lisence-${answers.license}-brightgreen)
 
 ## Description
 

@@ -1,5 +1,6 @@
 
 # README Generator
+![License Badge](https://img.shields.io/badge/lisence-Apache-2.0-brightgreen)
 
 ## Description
 
