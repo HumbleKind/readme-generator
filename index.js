@@ -82,7 +82,7 @@ function promptUser() {
             name: "license",
             choices: [
                 "MIT",
-                "Apache-2.0",
+                "Apache--2.0",
                 "GNU-3.0",
                 "BSD-3"
             ]
