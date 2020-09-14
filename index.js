@@ -114,24 +114,28 @@ function generateMD(answers) {
         const licenseGPL = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.";
         const licenseApache = "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
         
+        const licenseTest = "This application is covered under the ";
+
         // return the user selected license and respective summary
         if (license == "Apache 2.0") {
-            return "Apache 2.0: " + licenseApache;
+            return licenseTest + "Apache 2.0 license. " + licenseApache;
         };
         if (license == "GPL v3.0") {
-            return "GPL v3.0: " + licenseGPL;
+            return licenseTest + "GPL v3.0 license. " + licenseGPL;
         };
         if (license == "MIT") {
-            return "MIT: " + licenseMIT;
+            return licenseTest + "MIT license. " + licenseMIT;
         };
     };
     
     // generate/ update the license type variable with the correct details based on the user's 'answer.license'/selection parameter
     licenseType = generateLicense(answers.license);
 
+    licenseLabel = (answers.license).split(" ").join("%20");
+
     return `
 # ${answers.title}
-![License Badge](https://img.shields.io/badge/lisence-${answers.license}-green)
+![License Badge](https://img.shields.io/badge/lisence-${licenseLabel}-green)
 
 ## Description
 ${answers.description}
@@ -160,6 +164,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
+Please direct any questions regarding this application to the GitHub developer @ ${answers.github} ![GitHub Profile](https://github.com/${answers.github})
 `;
 }
 

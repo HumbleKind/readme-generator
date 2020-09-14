@@ -29,3 +29,4 @@ blank
 blank
 
 ## Questions
+Please direct any questions regarding this application to the GitHub developer @ HumbleKind ![GitHub Profile](https://github.com/HumbleKind)
