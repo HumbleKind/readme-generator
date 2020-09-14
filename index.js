@@ -61,10 +61,9 @@ function promptUser() {
             message: "Please select a license from the following list:",
             name: "license",
             choices: [
+                "Apache 2.0",
+                "GPL v3.0",
                 "MIT",
-                "Apache__2.0",
-                "GNU__3.0",
-                "BSD__3"
             ]
         },
         {
@@ -91,9 +90,48 @@ function promptUser() {
 }
 
 function generateMD(answers) {
+
+        // the following needed modification to function as intended
+        // const licenseMIT = "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
+        // const licenseGPL = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.";
+        // const licenseApa = "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
+
+        // function generateLicense(license) {
+        //     if (license == "Apache--2.0") {
+        //         let licenseType = "Apache 2.0: " + licenseApa;
+        //         return licenseType;
+        //     }
+        // }
+
+        // generateLicense(answers.license);
+    
+    // declare and initialize the 'licenseType' variable used globally/ below (in "License section")
+    let licenseType = "";
+    
+    function generateLicense(license) {
+        // create each individual license summary, inside license generating function (the only place these variable are used)
+        const licenseMIT = "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
+        const licenseGPL = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.";
+        const licenseApache = "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.";
+        
+        // return the user selected license and respective summary
+        if (license == "Apache 2.0") {
+            return "Apache 2.0: " + licenseApache;
+        };
+        if (license == "GPL v3.0") {
+            return "GPL v3.0: " + licenseGPL;
+        };
+        if (license == "MIT") {
+            return "MIT: " + licenseMIT;
+        };
+    };
+    
+    // generate/ update the license type variable with the correct details based on the user's 'answer.license'/selection parameter
+    licenseType = generateLicense(answers.license);
+
     return `
 # ${answers.title}
-![License Badge](https://img.shields.io/badge/lisence-${answers.license}-brightgreen)
+![License Badge](https://img.shields.io/badge/lisence-${answers.license}-green)
 
 ## Description
 ${answers.description}
@@ -113,6 +151,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
+${licenseType}
 
 ## Contributing
 ${answers.contributing}
