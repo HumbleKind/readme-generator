@@ -20,7 +20,7 @@ blank
 blank
 
 ## License
-This application is covered under the Apache 2.0 license. A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+This application is covered under the **Apache 2.0** license. A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 ## Contributing
 blank
@@ -29,4 +29,4 @@ blank
 blank
 
 ## Questions
-Please direct any questions regarding this application to the GitHub developer @ HumbleKind ![GitHub Profile](https://github.com/HumbleKind)
+Please direct any questions regarding this application to it's GitHub developer @ HumbleKind [GitHub Profile](https://github.com/HumbleKind), or via email @ christian_sinai@me.com.

@@ -118,13 +118,13 @@ function generateMD(answers) {
 
         // return the user selected license and respective summary
         if (license == "Apache 2.0") {
-            return licenseTest + "Apache 2.0 license. " + licenseApache;
+            return licenseTest + "**Apache 2.0** license. " + licenseApache;
         };
         if (license == "GPL v3.0") {
-            return licenseTest + "GPL v3.0 license. " + licenseGPL;
+            return licenseTest + "**GPL v3.0** license. " + licenseGPL;
         };
         if (license == "MIT") {
-            return licenseTest + "MIT license. " + licenseMIT;
+            return licenseTest + "**MIT** license. " + licenseMIT;
         };
     };
     
@@ -164,7 +164,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-Please direct any questions regarding this application to the GitHub developer @ ${answers.github} ![GitHub Profile](https://github.com/${answers.github})
+Please direct any questions regarding this application to it's GitHub developer @ ${answers.github} [GitHub Profile](https://github.com/${answers.github}), or via email @ ${answers.email}.
 `;
 }
 
