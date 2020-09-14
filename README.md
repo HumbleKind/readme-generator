@@ -29,4 +29,4 @@ blank
 blank
 
 ## Questions
-Please direct any questions regarding this application to it's GitHub developer @ HumbleKind [GitHub Profile](https://github.com/HumbleKind), or via email @ christian_sinai@me.com.
+Please direct any questions regarding this application to the developer @[HumbleKind](https://github.com/HumbleKind)(GitHub), or via email at christian_sinai@me.com.

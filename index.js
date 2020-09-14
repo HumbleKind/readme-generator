@@ -164,7 +164,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-Please direct any questions regarding this application to it's GitHub developer @ ${answers.github} [GitHub Profile](https://github.com/${answers.github}), or via email @ ${answers.email}.
+Please direct any questions regarding this application to the developer @[${answers.github}](https://github.com/${answers.github})(GitHub), or via email at ${answers.email}.
 `;
 }
 
