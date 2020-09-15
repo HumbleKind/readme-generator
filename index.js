@@ -1,4 +1,4 @@
-// use the builtin 'require' function to include the Node.js File System module (to modify local files)
+// use the built-in 'require' function to include the Node.js File System module (to modify local files)
 const fs = require("fs");
 
 // include the Inquirer.js command line user interface module for Node.js
@@ -164,7 +164,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-Please direct any questions regarding this application to the developer @[${answers.github}](https://github.com/${answers.github})(GitHub), or via email at ${answers.email}.
+Please direct any questions regarding this application to the developer @[${answers.github}](https://github.com/${answers.github}) (GitHub), or via email at ${answers.email}.
 `;
 }
 
