@@ -21,7 +21,7 @@ From the command line ...
 
 ## Usage
 1. enter relevant info when prompted
-![README Generator - Prompts](screen-shot-!)
+![README Generator - Prompts](screen-shot_1)
 
 2. push generated README.md (and associated files) to GitHub
 
