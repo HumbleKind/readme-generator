@@ -20,10 +20,12 @@ From the command line ...
 3. run npm install readme-generator
 
 ## Usage
-1. enter relevant info when prompted
+1. Enter relevant info when prompted.
 ![README Generator - Prompts](screen-shot_1.png)
 
-2. push generated README.md (and associated files) to GitHub
+2. Push generated README.md (and associated files) to GitHub.
+
+3. See [walk-through](https://drive.google.com/file/d/1dHc3Qf4pQxmyDSDDBWcoNOQXFY487bbL/view) video for help.
 
 ## License
 This application is covered under the **GPL v3.0** license. Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
