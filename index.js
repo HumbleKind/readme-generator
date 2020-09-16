@@ -172,10 +172,10 @@ promptUser()
     .then(function(answers) {
         const md = generateMD(answers);
 
-        return writeFileAsync("README.md", md);
+        return writeFileAsync("README_sample.md", md);
     })
     .then(function() {
-        console.log("Successfully wrote to README.md");
+        console.log("Successfully wrote to README_sample.md");
     })
     .catch(function(err) {
         console.log(err);
