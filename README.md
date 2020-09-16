@@ -20,8 +20,8 @@ From the command line ...
 3. run npm install readme-generator
 
 ## Usage
-1. Enter relevant info when prompted.
 ![README Generator - Prompts](screen-shot_1.png)
+1. Enter relevant info when prompted.
 
 2. Push generated README.md (and associated files) to GitHub.
 
